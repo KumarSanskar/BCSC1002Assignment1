@@ -17,7 +17,7 @@ public class Student {
 
     //constructors:
     public Student(String[] studentFullName, long universityRollNumber, int numberOfIssuedBooks) {
-        this.studentFullName = studentFullName;
+        this.studentFullName = studentFullName.split(" ");
         this.universityRollNumber = universityRollNumber;
         this.numberOfIssuedBooks = numberOfIssuedBooks;
         this.booksIssued = new Book[numberOfIssuedBooks];
