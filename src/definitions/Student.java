@@ -12,8 +12,15 @@ public class Student {
     private int numberOfIssuedBooks;
     private Book[] booksIssued;
 
-    //getters and setters:
+    //constructors:
+    public Student(String[] studentFullName, long universityRollNumber, int numberOfIssuedBooks) {
+        this.studentFullName = studentFullName;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfIssuedBooks = numberOfIssuedBooks;
+        this.booksIssued = new Book[numberOfIssuedBooks];
+    }
 
+    //getters and setters:
     public String[] getStudentFullName() {
         return studentFullName;
     }
