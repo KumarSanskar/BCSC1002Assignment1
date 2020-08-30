@@ -53,4 +53,31 @@ public class Student {
         this.booksIssued = booksIssued;
     }
 
+    /**
+     * This method issues a book to student.
+     *
+     * @param bookName the name of book to be issued.
+     */
+    public void issueNewBook(String bookName) {
+        System.out.println("Alert!" + bookName + "has been issued to you.");
+    }
+
+    /**
+     * This method enlists all the books issued till date by the student.
+     */
+    public void booksIssuedTillNow() {
+        for (Book booksIssued : booksIssued) {
+            System.out.println(booksIssued);
+        }
+    }
+
+    /**
+     * This method gives the name of book returned to library by student.
+     *
+     * @param bookName The name of the book returned.
+     */
+    public void returnTheBook(String bookName) {
+        System.out.println("The" + bookName + "has been returned by you successfully");
+    }
+
 }
