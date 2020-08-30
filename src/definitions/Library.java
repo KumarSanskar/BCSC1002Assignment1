@@ -11,7 +11,7 @@ public class Library {
 
     //constructor:
     public Library() {
-        this.booksAvailable = new Book[1000];
+        this.booksAvailable = new Book[20000];
     }
 
     //getters and setters:
@@ -22,4 +22,10 @@ public class Library {
     public void setBooksAvailable(Book[] booksAvailable) {
         this.booksAvailable = booksAvailable;
     }
+
+    //toString method:
+    public String toString() {
+        return String.format("Books Available: %s", getBooksAvailable());
+    }
+
 }
