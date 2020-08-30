@@ -9,4 +9,13 @@ package definitions;
 public class Library {
     private Book[] booksAvailable;
 
+    //getters and setters:
+
+    public Book[] getBooksAvailable() {
+        return booksAvailable;
+    }
+
+    public void setBooksAvailable(Book[] booksAvailable) {
+        this.booksAvailable = booksAvailable;
+    }
 }
