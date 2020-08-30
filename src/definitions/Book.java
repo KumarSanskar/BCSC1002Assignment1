@@ -50,6 +50,7 @@ public class Book {
         return String.format("Book Name: %s, Author's Name: %s, ISBN Number: %s", getBookName(), getAuthorName(), getIsbnNumber());
     }
 
+    //equals and hashcode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
