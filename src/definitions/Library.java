@@ -9,8 +9,12 @@ package definitions;
 public class Library {
     private Book[] booksAvailable;
 
-    //getters and setters:
+    //constructor:
+    public Library() {
+        this.booksAvailable = new Book[1000];
+    }
 
+    //getters and setters:
     public Book[] getBooksAvailable() {
         return booksAvailable;
     }
